@@ -1,6 +1,13 @@
 import tkinter as tk
 from tkinter import ttk
 
+try:
+    '''the text looks much nicer'''
+    from ctypes import windll
+    windll.shcore.SetProcessDpiAwareness(1)
+except:
+    pass
+
 def greet():
     print(f"Hello, {user_name.get() or 'World!'}")
 

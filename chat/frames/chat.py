@@ -13,7 +13,7 @@ class Chat(ttk.Frame):
         self.rowconfigure(0, weight=1)
         
         input_frame = ttk.Frame(self, padding=10)
-        input_frame.grid(row=1, column=0, sticky="EW")
+        input_frame.grid(row=1, column=0, sticky="EW", sticky="NSEW")
         
         message_fetch = ttk.Button(
             input_frame,
